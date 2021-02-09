@@ -24,9 +24,9 @@
 	</properties>
 
 	<scm>
-		<url>https://github.com/harishsubramanian2577/cicd-demo-project</url>
-		<connection>scm:git:git@github.com:harishsubramanian2577/cicd-demo-project.git</connection>
-		<developerConnection>scm:git:git@github.com:harishsubramanian2577/cicd-demo-project.git</developerConnection>
+		<url>https://github.com/mulesoft-consulting/cicd-demo-project.git</url>
+		<connection>scm:git:git@github.com:mulesoft-consulting/cicd-demo-project.git</connection>
+		<developerConnection>scm:git:git@github.com:mulesoft-consulting/cicd-demo-project.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
