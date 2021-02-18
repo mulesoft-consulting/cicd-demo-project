@@ -4,7 +4,7 @@
 
 	<groupId>com.mycompany</groupId>
 	<artifactId>cicd-demo-project</artifactId>
-    <version>1.0.14</version>
+    <version>1.0.15-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
 	<name>cicd-demo-project</name>
@@ -27,7 +27,7 @@
 		<url>https://github.com/mulesoft-consulting/cicd-demo-project.git</url>
 		<connection>scm:git:git@github.com:mulesoft-consulting/cicd-demo-project.git</connection>
 		<developerConnection>scm:git:git@github.com:mulesoft-consulting/cicd-demo-project.git</developerConnection>
-		<tag>1.0.14</tag>
+		<tag>1.0.12</tag>
 	</scm>
 
 	<build>
