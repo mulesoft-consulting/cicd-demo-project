@@ -4,7 +4,7 @@
 
 	<groupId>com.mycompany</groupId>
 	<artifactId>cicd-demo-project</artifactId>
-    <version>1.0.12</version>
+    <version>1.0.13-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
 	<name>cicd-demo-project</name>
