@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+  tools { 
+        maven 'maven'
+        jdk 'jdk8' 
+  }
+  stages {
+    stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                ''' 
+       }
+    }
+    stage('Release') {
+      environment {
+        releaseVersion = "${env.release_version}"
+        developmentVersion = "${env.dev_version}"
+      }
+      steps {
+        echo "----Running Build ${env.BUILD_ID} ----- "
+        echo "---- Prepare and Performing Release ${releaseVersion} and setting next developmentVersion to ${developmentVersion} ----- "
+        sh 'mvn release:clean release:prepare release:perform -DskipStaging=true -DreleaseVersion=${releaseVersion} -DdevelopmentVersion=${developmentVersion} -Dtag=${releaseVersion}'
+      }
+    }
+  }
+}
